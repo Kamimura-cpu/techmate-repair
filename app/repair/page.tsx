@@ -112,9 +112,9 @@ export default function RepairPage() {
 
         <div style={{ textAlign: "center" }}>
           <p style={{ fontSize: "15px", color: "#64748b", marginBottom: "14px" }}>まずはLINEで無料見積もりをどうぞ</p>
-          <Link href="/contact" style={{
+          <Link href="/contact" className="btn-line" style={{
             display: "block",
-            backgroundColor: "#2563eb",
+            backgroundColor: "#06C755",
             color: "#ffffff",
             padding: "16px",
             borderRadius: "12px",
@@ -122,7 +122,7 @@ export default function RepairPage() {
             fontWeight: 700,
             textDecoration: "none",
             textAlign: "center",
-            boxShadow: "0 4px 12px rgba(37,99,235,0.3)",
+            boxShadow: "0 4px 12px rgba(6,199,85,0.3)",
           }}>
             LINEで見積もり依頼
           </Link>

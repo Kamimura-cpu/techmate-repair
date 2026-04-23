@@ -75,9 +75,9 @@ export default function HomePage() {
             出張修理・買取・販売を行っています。iPhone・Mac・Windows PCに対応。まずはLINEで無料相談。
           </p>
           <div className="hero-buttons" style={{ display: "flex", flexDirection: "column", gap: "12px", maxWidth: "360px", margin: "0 auto" }}>
-            <Link href="/contact" className="btn-primary" style={{
+            <Link href="/contact" className="btn-line" style={{
               display: "block",
-              backgroundColor: "#2563eb",
+              backgroundColor: "#06C755",
               color: "#ffffff",
               padding: "16px",
               borderRadius: "12px",
@@ -85,7 +85,7 @@ export default function HomePage() {
               fontWeight: 700,
               textDecoration: "none",
               textAlign: "center",
-              boxShadow: "0 4px 12px rgba(37,99,235,0.4)",
+              boxShadow: "0 4px 12px rgba(6,199,85,0.4)",
             }}>
               LINEで無料相談
             </Link>
@@ -301,7 +301,7 @@ export default function HomePage() {
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 <Link href="/contact" className="btn-primary" style={{
                   display: "block",
-                  backgroundColor: "#2563eb",
+                  backgroundColor: "#06C755",
                   color: "#ffffff",
                   padding: "14px",
                   borderRadius: "10px",
@@ -309,7 +309,7 @@ export default function HomePage() {
                   fontWeight: 700,
                   textDecoration: "none",
                   textAlign: "center",
-                  boxShadow: "0 4px 12px rgba(37,99,235,0.25)",
+                  boxShadow: "0 4px 12px rgba(6,199,85,0.3)",
                 }}>
                   LINEで査定依頼
                 </Link>

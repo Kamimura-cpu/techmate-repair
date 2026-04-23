@@ -38,7 +38,7 @@ export default function Header() {
           <Link
             href="/contact"
             style={{
-              backgroundColor: "#2563eb",
+              backgroundColor: "#06C755",
               color: "#ffffff",
               padding: "10px 20px",
               borderRadius: "8px",
@@ -47,7 +47,7 @@ export default function Header() {
               textDecoration: "none",
               display: "inline-block",
             }}
-            className="hover:bg-blue-700 transition-colors"
+            className="btn-line"
           >
             LINEで相談
           </Link>
@@ -85,7 +85,7 @@ export default function Header() {
               style={{
                 display: "block",
                 textAlign: "center",
-                backgroundColor: "#2563eb",
+                backgroundColor: "#06C755",
                 color: "#ffffff",
                 padding: "12px 20px",
                 borderRadius: "8px",

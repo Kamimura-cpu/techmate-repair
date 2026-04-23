@@ -127,7 +127,7 @@ export default function ActivationLockPage() {
           </p>
           <Link href="/contact" style={{
             display: "block",
-            backgroundColor: "#2563eb",
+            backgroundColor: "#06C755",
             color: "#ffffff",
             padding: "16px",
             borderRadius: "12px",
@@ -135,7 +135,7 @@ export default function ActivationLockPage() {
             fontWeight: 700,
             textDecoration: "none",
             textAlign: "center",
-            boxShadow: "0 4px 12px rgba(37,99,235,0.3)",
+            boxShadow: "0 4px 12px rgba(6,199,85,0.3)",
           }}>
             LINEで相談する
           </Link>
