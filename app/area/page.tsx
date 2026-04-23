@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,11 +24,20 @@ const notes = [
 export default function AreaPage() {
   return (
     <div style={{ backgroundColor: "#f1f5f9", minHeight: "100vh" }}>
+
+      {/* Hero */}
+      <section style={{ position: "relative", width: "100%", height: "clamp(220px, 35vw, 320px)", overflow: "hidden" }}>
+        <Image src="/hero-area.png" alt="上田市の風景" fill style={{ objectFit: "cover", objectPosition: "center 40%" }} priority />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(15,23,42,0.35) 0%, rgba(15,23,42,0.6) 100%)" }} />
+        <div style={{ position: "relative", zIndex: 1, height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 24px" }}>
+          <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "13px", fontWeight: 700, marginBottom: "10px", letterSpacing: "0.08em" }}>SERVICE AREA</p>
+          <h1 style={{ fontSize: "clamp(24px, 5vw, 36px)", fontWeight: 800, color: "#ffffff", textShadow: "0 2px 8px rgba(0,0,0,0.3)" }}>出張対応エリア</h1>
+        </div>
+      </section>
+
       <div style={{ maxWidth: "680px", margin: "0 auto", padding: "48px 20px" }}>
 
         <div style={{ marginBottom: "40px" }}>
-          <p style={{ color: "#2563eb", fontSize: "13px", fontWeight: 700, marginBottom: "8px", letterSpacing: "0.05em" }}>SERVICE AREA</p>
-          <h1 style={{ fontSize: "clamp(24px, 5vw, 30px)", fontWeight: 800, color: "#1e293b", marginBottom: "14px" }}>出張対応エリア</h1>
           <p style={{ fontSize: "15px", color: "#475569", lineHeight: 1.8 }}>
             以下のエリアへ出張修理・買取・販売に伺います。出張費は無料です。エリア外の方もまずはご相談ください。
           </p>

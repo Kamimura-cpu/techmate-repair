@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "お問い合わせ | TechMate Repair Service",
@@ -22,11 +23,20 @@ const tips = [
 export default function ContactPage() {
   return (
     <div style={{ backgroundColor: "#f1f5f9", minHeight: "100vh" }}>
+
+      {/* Hero */}
+      <section style={{ position: "relative", width: "100%", height: "clamp(220px, 35vw, 320px)", overflow: "hidden" }}>
+        <Image src="/hero-contact.png" alt="お問い合わせ" fill style={{ objectFit: "cover", objectPosition: "center" }} priority />
+        <div style={{ position: "absolute", inset: 0, background: "rgba(15,23,42,0.35)" }} />
+        <div style={{ position: "relative", zIndex: 1, height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 24px" }}>
+          <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "13px", fontWeight: 700, marginBottom: "10px", letterSpacing: "0.08em" }}>CONTACT</p>
+          <h1 style={{ fontSize: "clamp(24px, 5vw, 36px)", fontWeight: 800, color: "#ffffff", textShadow: "0 2px 8px rgba(0,0,0,0.2)" }}>お問い合わせ</h1>
+        </div>
+      </section>
+
       <div style={{ maxWidth: "560px", margin: "0 auto", padding: "48px 20px" }}>
 
         <div style={{ marginBottom: "36px" }}>
-          <p style={{ color: "#2563eb", fontSize: "13px", fontWeight: 700, marginBottom: "8px", letterSpacing: "0.05em" }}>CONTACT</p>
-          <h1 style={{ fontSize: "clamp(24px, 5vw, 30px)", fontWeight: 800, color: "#1e293b", marginBottom: "12px" }}>お問い合わせ</h1>
           <p style={{ fontSize: "15px", color: "#475569", lineHeight: 1.8 }}>
             見積もり・ご予約・ご質問はすべてLINEで受け付けています。お気軽にご連絡ください。
           </p>

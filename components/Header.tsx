@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navItems = [
+  { href: "/", label: "ホーム" },
   { href: "/repair", label: "修理メニュー" },
   { href: "/buyback", label: "買取" },
   { href: "/sales", label: "販売中の端末" },

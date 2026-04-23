@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import type { Device } from "@/app/api/sales/route";
 
 export const metadata: Metadata = {
@@ -29,15 +30,23 @@ export default async function SalesPage() {
 
   return (
     <div style={{ backgroundColor: "#f1f5f9", minHeight: "100vh" }}>
+
+      {/* Hero */}
+      <section style={{ position: "relative", width: "100%", height: "clamp(220px, 35vw, 320px)", overflow: "hidden" }}>
+        <Image src="/hero-sales.png" alt="販売中の端末" fill style={{ objectFit: "cover", objectPosition: "center" }} priority />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(15,23,42,0.35) 0%, rgba(15,23,42,0.6) 100%)" }} />
+        <div style={{ position: "relative", zIndex: 1, height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center", padding: "0 24px" }}>
+          <p style={{ color: "rgba(255,255,255,0.7)", fontSize: "13px", fontWeight: 700, marginBottom: "10px", letterSpacing: "0.08em" }}>FOR SALE</p>
+          <h1 style={{ fontSize: "clamp(24px, 5vw, 36px)", fontWeight: 800, color: "#ffffff", textShadow: "0 2px 8px rgba(0,0,0,0.3)" }}>販売中の端末</h1>
+        </div>
+      </section>
+
       <div className="max-w-5xl mx-auto px-5 py-16">
 
         {/* Header */}
         <div style={{ marginBottom: "40px" }}>
-          <p style={{ color: "#2563eb", fontSize: "14px", fontWeight: 600, marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.05em" }}>For Sale</p>
-          <h1 style={{ fontSize: "32px", fontWeight: 800, color: "#1e293b", marginBottom: "14px" }}>販売中の端末</h1>
           <p style={{ fontSize: "16px", color: "#475569", lineHeight: 1.7 }}>
-            整備・動作確認済みの端末を販売しています。<br />
-            購入はLINEからご連絡ください。
+            整備・動作確認済みの端末を販売しています。購入はLINEからご連絡ください。
           </p>
         </div>
 
