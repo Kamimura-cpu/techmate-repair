@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 const trustPoints = [
@@ -44,55 +45,69 @@ export default function HomePage() {
 
       {/* Hero */}
       <section style={{ backgroundColor: "#eff6ff", borderBottom: "1px solid #dbeafe", padding: "56px 20px" }}>
-        <div style={{ maxWidth: "680px", margin: "0 auto", textAlign: "center" }}>
-          <span className="hero-badge" style={{
-            display: "inline-block",
-            backgroundColor: "#fef9c3",
-            color: "#854d0e",
-            fontSize: "14px",
-            fontWeight: 600,
-            padding: "6px 16px",
-            borderRadius: "999px",
-            marginBottom: "24px",
-          }}>
-            🎓 現役大学生が運営・店舗なしで低価格
-          </span>
-          <h1 className="hero-title" style={{ fontSize: "clamp(26px, 6vw, 42px)", fontWeight: 800, color: "#1e293b", lineHeight: 1.35, marginBottom: "18px" }}>
-            スマホ・PCの困りごと、お気軽にご相談ください
-          </h1>
-          <p className="hero-desc" style={{ fontSize: "clamp(15px, 2.5vw, 17px)", color: "#475569", lineHeight: 1.8, marginBottom: "32px" }}>
-            出張修理・買取・販売を行っています。iPhone・Mac・Windows PCに対応。まずはLINEで無料相談。
-          </p>
-          <div className="hero-buttons" style={{ display: "flex", flexDirection: "column", gap: "12px", alignItems: "stretch", maxWidth: "360px", margin: "0 auto" }}>
-            <Link href="/contact" className="btn-primary" style={{
-              display: "block",
-              backgroundColor: "#2563eb",
-              color: "#ffffff",
-              padding: "16px",
-              borderRadius: "12px",
-              fontSize: "17px",
-              fontWeight: 700,
-              textDecoration: "none",
-              textAlign: "center",
-              boxShadow: "0 4px 12px rgba(37,99,235,0.3)",
-            }}>
-              LINEで無料相談
-            </Link>
-            <Link href="/repair" style={{
-              display: "block",
-              backgroundColor: "#ffffff",
-              color: "#334155",
-              padding: "16px",
-              borderRadius: "12px",
-              fontSize: "17px",
+        <div style={{ maxWidth: "1000px", margin: "0 auto", display: "flex", alignItems: "center", gap: "48px", flexWrap: "wrap" }}>
+          {/* テキスト */}
+          <div style={{ flex: "1 1 300px", minWidth: 0 }}>
+            <span className="hero-badge" style={{
+              display: "inline-block",
+              backgroundColor: "#fef9c3",
+              color: "#854d0e",
+              fontSize: "14px",
               fontWeight: 600,
-              textDecoration: "none",
-              textAlign: "center",
-              border: "1px solid #cbd5e1",
-              transition: "border-color 0.15s ease, color 0.15s ease",
+              padding: "6px 16px",
+              borderRadius: "999px",
+              marginBottom: "24px",
             }}>
-              修理メニューを見る
-            </Link>
+              🎓 現役大学生が運営・店舗なしで低価格
+            </span>
+            <h1 className="hero-title" style={{ fontSize: "clamp(26px, 5vw, 40px)", fontWeight: 800, color: "#1e293b", lineHeight: 1.35, marginBottom: "18px" }}>
+              スマホ・PCの困りごと、お気軽にご相談ください
+            </h1>
+            <p className="hero-desc" style={{ fontSize: "clamp(15px, 2.5vw, 17px)", color: "#475569", lineHeight: 1.8, marginBottom: "32px" }}>
+              出張修理・買取・販売を行っています。iPhone・Mac・Windows PCに対応。まずはLINEで無料相談。
+            </p>
+            <div className="hero-buttons" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              <Link href="/contact" className="btn-primary" style={{
+                display: "block",
+                backgroundColor: "#2563eb",
+                color: "#ffffff",
+                padding: "16px",
+                borderRadius: "12px",
+                fontSize: "17px",
+                fontWeight: 700,
+                textDecoration: "none",
+                textAlign: "center",
+                boxShadow: "0 4px 12px rgba(37,99,235,0.3)",
+              }}>
+                LINEで無料相談
+              </Link>
+              <Link href="/repair" style={{
+                display: "block",
+                backgroundColor: "#ffffff",
+                color: "#334155",
+                padding: "16px",
+                borderRadius: "12px",
+                fontSize: "17px",
+                fontWeight: 600,
+                textDecoration: "none",
+                textAlign: "center",
+                border: "1px solid #cbd5e1",
+                transition: "border-color 0.15s ease, color 0.15s ease",
+              }}>
+                修理メニューを見る
+              </Link>
+            </div>
+          </div>
+          {/* 写真 */}
+          <div className="hero-title" style={{ flex: "1 1 280px", minWidth: 0, borderRadius: "20px", overflow: "hidden", boxShadow: "0 8px 32px rgba(37,99,235,0.15)" }}>
+            <Image
+              src="/repair2.png"
+              alt="iPhone修理作業中"
+              width={600}
+              height={420}
+              style={{ width: "100%", height: "auto", display: "block" }}
+              priority
+            />
           </div>
         </div>
       </section>
@@ -149,7 +164,7 @@ export default function HomePage() {
               <h2 style={{ fontSize: "clamp(20px, 4vw, 26px)", fontWeight: 800, color: "#1e293b", marginBottom: "12px" }}>
                 「大学生が修理して大丈夫？」
               </h2>
-              <p style={{ fontSize: "15px", color: "#475569", lineHeight: 1.8 }}>
+              <p style={{ fontSize: "15px", color: "#475569", lineHeight: 1.8, maxWidth: "480px", margin: "0 auto" }}>
                 ご安心ください。情報技術・電子工学に関する専門的な学習・研究を行っている大学生が対応します。
               </p>
             </div>
@@ -211,8 +226,20 @@ export default function HomePage() {
       <section style={{ backgroundColor: "#ffffff", padding: "56px 20px", borderTop: "1px solid #e2e8f0", borderBottom: "1px solid #e2e8f0" }}>
         <div style={{ maxWidth: "960px", margin: "0 auto" }}>
           <Reveal>
-            <h2 style={{ fontSize: "clamp(20px, 4vw, 24px)", fontWeight: 800, color: "#1e293b", textAlign: "center", marginBottom: "8px" }}>対応修理メニュー</h2>
-            <p style={{ fontSize: "15px", color: "#64748b", textAlign: "center", marginBottom: "28px" }}>iPhone・Mac・Windows PCに対応しています</p>
+            <div style={{ borderRadius: "20px", overflow: "hidden", marginBottom: "32px", position: "relative", height: "220px" }}>
+              <Image
+                src="/repair1.png"
+                alt="修理作業"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center 40%" }}
+              />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, rgba(15,23,42,0.7) 0%, rgba(15,23,42,0.2) 100%)", display: "flex", alignItems: "center", padding: "0 36px" }}>
+                <div>
+                  <h2 style={{ fontSize: "clamp(20px, 4vw, 26px)", fontWeight: 800, color: "#ffffff", marginBottom: "8px" }}>対応修理メニュー</h2>
+                  <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.8)" }}>iPhone・Mac・Windows PCに対応しています</p>
+                </div>
+              </div>
+            </div>
           </Reveal>
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "16px", marginBottom: "28px" }}>
             {repairItems.map((r, i) => (
