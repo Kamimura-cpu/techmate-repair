@@ -67,7 +67,7 @@ export default function AreaPage() {
           </ul>
         </div>
 
-        <Link href="/contact" className="btn-line" style={{
+        <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" className="btn-line" style={{
           display: "block",
           backgroundColor: "#06C755",
           color: "#ffffff",

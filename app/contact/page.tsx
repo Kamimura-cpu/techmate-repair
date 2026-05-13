@@ -52,7 +52,7 @@ export default function ContactPage() {
             公式LINEアカウントにメッセージをお送りください。24時間以内に返信します。
           </p>
           <a
-            href="https://line.me/ti/p/@techmate-repair"
+            href="https://line.me/R/ti/p/%40644lbfta"
             target="_blank"
             rel="noopener noreferrer"
             style={{

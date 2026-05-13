@@ -75,7 +75,7 @@ export default function HomePage() {
             出張修理・買取・販売を行っています。iPhone・Mac・Windows PCに対応。まずはLINEで無料相談。
           </p>
           <div className="hero-buttons" style={{ display: "flex", flexDirection: "column", gap: "12px", maxWidth: "360px", margin: "0 auto" }}>
-            <Link href="/contact" className="btn-line" style={{
+            <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" className="btn-line" style={{
               display: "block",
               backgroundColor: "#06C755",
               color: "#ffffff",
@@ -299,7 +299,7 @@ export default function HomePage() {
                 </p>
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                <Link href="/contact" className="btn-primary" style={{
+                <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{
                   display: "block",
                   backgroundColor: "#06C755",
                   color: "#ffffff",
@@ -369,7 +369,7 @@ export default function HomePage() {
             <p style={{ fontSize: "15px", color: "#bfdbfe", lineHeight: 1.8, marginBottom: "28px" }}>
               見積もり・ご予約・ご質問、すべてLINEで受け付けています。24時間以内に返信します。
             </p>
-            <Link href="/contact" className="btn-line" style={{
+            <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" className="btn-line" style={{
               display: "block",
               backgroundColor: "#06C755",
               color: "#ffffff",

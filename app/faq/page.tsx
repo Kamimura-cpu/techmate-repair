@@ -55,7 +55,7 @@ export default function FaqPage() {
 
         <div style={{ textAlign: "center" }}>
           <p style={{ fontSize: "15px", color: "#64748b", marginBottom: "14px" }}>他にご不明な点はLINEでご質問ください</p>
-          <Link href="/contact" className="btn-line" style={{
+          <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" className="btn-line" style={{
             display: "block",
             backgroundColor: "#06C755",
             color: "#ffffff",

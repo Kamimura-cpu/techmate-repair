@@ -94,7 +94,7 @@ export default async function SalesPage() {
                     <p style={{ fontSize: "14px", color: "#64748b", lineHeight: 1.6, marginBottom: "18px" }}>{device.conditionNote}</p>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                       <p style={{ fontSize: "20px", fontWeight: 800, color: "#1e293b" }}>¥{device.price.toLocaleString()}</p>
-                      <Link href="/contact" style={{
+                      <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" style={{
                         backgroundColor: "#2563eb",
                         color: "#ffffff",
                         padding: "8px 16px",
@@ -116,7 +116,7 @@ export default async function SalesPage() {
         {/* CTA */}
         <div style={{ marginTop: "48px", textAlign: "center" }}>
           <p style={{ fontSize: "16px", color: "#64748b", marginBottom: "16px" }}>希望の機種がない場合もお気軽にご相談ください</p>
-          <Link href="/contact" style={{
+          <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" style={{
             display: "inline-block",
             border: "2px solid #2563eb",
             color: "#2563eb",

@@ -125,7 +125,7 @@ export default function ActivationLockPage() {
           <p style={{ fontSize: "14px", color: "#475569", lineHeight: 1.7, marginBottom: "20px" }}>
             解除できないかもしれない状態でも、まずはLINEで相談してください。状態を確認してご対応します。
           </p>
-          <Link href="/contact" style={{
+          <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" style={{
             display: "block",
             backgroundColor: "#06C755",
             color: "#ffffff",

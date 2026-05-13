@@ -166,7 +166,7 @@ export default function BuybackPage() {
           <p style={{ fontSize: "14px", color: "#475569", lineHeight: 1.7, marginBottom: "20px" }}>
             機種名・状態・写真を送っていただくとスムーズに査定できます。
           </p>
-          <Link href="/contact" className="btn-line" style={{
+          <Link href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer" className="btn-line" style={{
             display: "block",
             backgroundColor: "#06C755",
             color: "#ffffff",

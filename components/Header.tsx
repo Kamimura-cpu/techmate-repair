@@ -36,7 +36,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/contact"
+            href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer"
             style={{
               backgroundColor: "#06C755",
               color: "#ffffff",
@@ -81,7 +81,7 @@ export default function Header() {
           ))}
           <div style={{ padding: "12px 20px" }}>
             <Link
-              href="/contact"
+              href="https://line.me/R/ti/p/%40644lbfta" target="_blank" rel="noopener noreferrer"
               style={{
                 display: "block",
                 textAlign: "center",
