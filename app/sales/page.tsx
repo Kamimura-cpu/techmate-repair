@@ -27,8 +27,8 @@ const channels = [
   },
   {
     icon: "🛍️",
-    title: "PayPayフリマで出品中の端末を見る",
-    description: "整備済みの端末をPayPayフリマに出品しています。全国どこからでも購入でき、配送でお届けします。",
+    title: "Yahoo!フリマで出品中の端末を見る",
+    description: "整備済みの端末をYahoo!フリマに出品しています。全国どこからでも購入でき、配送でお届けします。",
     href: PAYPAY_FLEA_URL,
     button: "出品一覧を見る",
     buttonBg: "#2563eb",
@@ -54,7 +54,7 @@ export default function SalesPage() {
         {/* Header */}
         <div style={{ marginBottom: "32px" }}>
           <p style={{ fontSize: "16px", color: "#475569", lineHeight: 1.7 }}>
-            整備・動作確認済みの端末を販売しています。在庫は日々入れ替わるため、LINEでのご案内とPayPayフリマへの出品でお知らせしています。
+            整備・動作確認済みの端末を販売しています。在庫は日々入れ替わるため、LINEでのご案内とYahoo!フリマへの出品でお知らせしています。
           </p>
         </div>
 
